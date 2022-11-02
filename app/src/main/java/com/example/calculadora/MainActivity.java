@@ -53,6 +53,62 @@ public class MainActivity extends AppCompatActivity {
                 pantalla.setText(pantalla.getText()+"1");
             }
         });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"2");
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"3");
+            }
+        });
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"4");
+            }
+        });
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"5");
+            }
+        });
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"6");
+            }
+        });
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"7");
+            }
+        });
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"8");
+            }
+        });
+        btn9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"9");
+            }
+        });
         eliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
