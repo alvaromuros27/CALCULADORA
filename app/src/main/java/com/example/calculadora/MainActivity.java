@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Button eliminar = findViewById(R.id.btnlimpiar);
         Button resultado = findViewById(R.id.btnreslt);
         Button sumar = findViewById(R.id.btnsuma);
-        Button resta = findViewById(R.id.btnresta);
+        Button restar = findViewById(R.id.btnresta);
         Button multiplicacion = findViewById(R.id.btnmult);
         Button dividir = findViewById(R.id.btndiv);
         Button punto = findViewById(R.id.btnpunto);
@@ -119,6 +119,39 @@ public class MainActivity extends AppCompatActivity {
                 pantalla.setText("");
             }
         });
+        sumar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                operador = "+";
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"+");
+            }
+        });
+        restar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                operador = "-";
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"-");
+            }
+        });
+        multiplicacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                operador = "/";
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"*");
+            }
+        });
+        dividir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                operador = "/";
+                pantalla=(TextView) findViewById(R.id.tv_num2);
+                pantalla.setText(pantalla.getText()+"/");
+            }
+        });
+
 
 
     }
