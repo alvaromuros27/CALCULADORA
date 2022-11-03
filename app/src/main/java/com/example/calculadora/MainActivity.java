@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         multiplicacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                operador = "/";
+                operador = "*";
                 pantalla=(TextView) findViewById(R.id.tv_num2);
                 pantalla.setText(pantalla.getText()+"*");
             }
@@ -149,6 +149,22 @@ public class MainActivity extends AppCompatActivity {
                 operador = "/";
                 pantalla=(TextView) findViewById(R.id.tv_num2);
                 pantalla.setText(pantalla.getText()+"/");
+            }
+        });
+        resultado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(operador.equals("+")){
+                    result=num1+num2;
+                }else if(operador.equals("-")){
+                    result=num1-num2;
+                }else if(operador.equals("*")){
+                    result=num1*num2;
+                }else if(operador.equals("/")){
+                    result=num1/num2;
+                }
+                pantalla.setText(" "+result);
             }
         });
 
